@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stye.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Nota Final</title>
+</head>
+<body>
+    <div class="content">
+        <div class="topo">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+        <div class="head">
+            <h2>Lançamento de notas no sistema</h2>
+            <label for="disciplina">Selecione a disciplina:</label>
+            <select id="disciplina" name="disciplina">
+                <option value="introducao">Introdução a Informática</option>
+                <option value="linguagens">Linguagens de Programação</option>
+                <option value="programacao">Programação de Computadores</option>
+            </select>
+        </div>
+        <form action="" method="GET"> 
+            <table>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Exame</th>
+                    <th>Média</th>
+                    <th>Faltas</th>
+                </tr>
+                <tr oninput="mediaJoana.value=(parseInt(notaJoana1.value)+parseInt(notaJoana2.value))/2">
+                    <td>Joana da Silva</td>
+                    <td><input id="notaJoana1" name="notaJoana1" type="number" min="0" max="10" required></td>
+                    <td><input id="notaJoana2" name="notaJoana2" type="number" min="0" max="10" required></td>
+                    <td><input id="exameJoana" name="exameJoana" type="number" min="0" max="10"></td>
+                    <td><output name="mediaJoana" id="mediaJoana" for="notaJoana1 notaJoana2" ></output></td>
+                    <td><input id="faltaJoana" name="faltaJoana" type="number" min="0" max="16" required></td>
+                </tr>
+                <tr oninput="mediaMaria.value=(parseInt(notaMaria1.value)+parseInt(notaMaria2.value))/2">
+                    <td>Maria do Socorro</td>
+                    <td><input id="notaMaria1" name="notaMaria1" type="number" min="0" max="10" required></td>
+                    <td><input id="notaMaria2" name="notaMaria2" type="number" min="0" max="10" required></td>
+                    <td><input id="exameMaria" name="exameMaria" type="number" min="0" max="10"></td>
+                    <td><output  name="mediaMaria" id="mediaMaria" for="notaMaria1 notaMaria2" ></output></td>
+                    <td><input id="faltaMaria" name="faltaMaria" type="number" min="0" max="16" required></td>
+                </tr>
+                <tr oninput="mediaPedro.value=(parseInt(notaPedro1.value)+parseInt(notaPedro2.value))/2">
+                    <td>Pedro dos Santos</td>
+                    <td><input id="notaPedro1" name="notaPedro1" type="number" min="0" max="10" required></td>
+                    <td><input id="notaPedro2" name="notaPedro2" type="number" min="0" max="10" required></td>
+                    <td><input id="examePedro" name="examePedro" type="number" min="0" max="10" ></td>
+                    <td><output name="mediaPedro" id="mediaPedro" for="notaPedro1 notaPedro2" ></output></td>
+                    <td><input id="faltaPedro" name="faltaPedro" type="number" min="0" max="16" required></td>
+                </tr>
+            </table>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+</body>
+</html>

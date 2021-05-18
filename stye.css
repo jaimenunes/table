@@ -1,0 +1,84 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(14, 18, 46, 0.849);
+
+}
+
+
+.content{
+    border: 5px solid rgba(112, 195, 243, 0.897);
+    width: 60%;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+
+}
+
+.topo{
+    width: 100%;
+    margin-top: -2px;
+    margin-left: -5px;
+    height: 40px;
+    border: 5px solid rgba(112, 195, 243, 0.897);
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgba(14, 18, 46, 0.849);
+}
+i{
+    margin-left: 2%;
+    margin-top: 2%;
+    color: rgb(234, 236, 95);
+}
+
+span{
+    margin-top: 1.5%;
+    margin-right: 3%;
+    float: right;
+}
+
+.head{
+    margin-left: 25px;
+}
+table{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    border-spacing: 15px;
+}
+
+select{
+    border: 2px solid #000;
+    text-align: center;
+}
+
+input{
+    width: 60%;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 10%;
+    height: 40px;
+    background-color: rgba(14, 18, 46, 0.849);
+    border-radius: 10px;
+    border-color: #fff;
+    color: #fff;
+    font-weight: 900;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fff;
+    color: rgba(14, 18, 46, 0.849);
+}
